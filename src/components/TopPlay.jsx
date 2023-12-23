@@ -54,7 +54,6 @@ const TopPlay = () => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   const { data } = useGetTopChartsQuery();
   const divRef = useRef(null);
-  console.log(activeSong, isPlaying, "ggg");
 
   const topPlaySong = data?.slice(0, 5);
 
